@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container forms">
+      <!-- Logo -->
+      <a href="./index.html" class="logo">eBudget</a>
+
+      <!-- Login page -->
+      <div class="form login">
+        <div class="form-container">
+          <header>Login</header>
+          <form action="./dashboard.html">
+            <div class="field email-field">
+              <div class="input-field">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="email"
+                  id="email"
+                />
+              </div>
+              <span class="error email-error">
+                <i class="bx bx-error-circle error-icon"></i>
+                <p class="error-text">Please enter a valid email</p>
+              </span>
+            </div>
+            <div class="field create-password">
+              <div class="input-field">
+                <input
+                  type="password"
+                  placeholder="Enter password"
+                  class="password"
+                  id="password"
+                />
+                <i class="bx bx-hide show-hide"></i>
+              </div>
+              <span class="error password-error">
+                <i class="bx bx-error-circle error-icon"></i>
+                <p class="error-text">
+                  Please enter atleast 8 character with number and symbol
+                </p>
+              </span>
+            </div>
+
+            <div class="input-field botton">
+              <input type="submit" value="Submit Now" />
+            </div>
+          </form>
+          <div class="form-link">
+            <span
+              >You don't have an account?
+              <a href="./signup.html" class="link signup-link">Sign up</a></span
+            >
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="media-options">
+          <a href="#" class="input-field google">
+            <img
+              src="./assets/img/login-img/google.png"
+              alt=""
+              class="google-img"
+            />
+            <span>Sign in with Google</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/loginauth.js"></script>
+  </body>
+</html>

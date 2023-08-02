@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Calcula</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/calculator.css">
+    <link rel="stylesheet" href="./assets/css/landing-page.css">
+  </head>
+  <body>
+    <header>
+
+      <!-- brand -->
+      <div class="logo"><a href="./index.html">eBUDGET</a></div>
+
+      <button class="bars" id="bars">
+          <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- nav items-->
+      <nav class="navbar">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./savings.html">Savings Plan</a>
+        <!-- <a href="./calculator.html">Calculator</a> -->
+        <a href="#">Budget</a>
+        <a href="#">About Us</a>
+        <a href="./contact.html">Contact Us</a>
+        <!-- mobile sign-up -->
+        <div class="mobile-auth">
+          <a href="./signup.html" class="sign-up">Sign Up</a>
+          <a href="./signin.html" class="sign-in">Sign In</a>
+        </div>
+      </nav>
+
+      <div class="sign">
+        <a href="./signup.html" class="sign-up">Sign Up</a>
+        <a href="./signin.html" class="sign-in">Sign In</a>
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- caculator container -->
+
+
+    <div class="wrapper">
+      <div class="container">
+        <div class="sub-container">
+          <!-- Budget -->
+          <div class="total-amount-container">
+            <h3>eBudget Calculator</h3>
+            <p class="hide error" id="budget-error">
+              Value cannot be empty or negative
+            </p>
+            <input
+              type="number"
+              id="total-amount"
+              placeholder="Enter Total Amount"
+            />
+            <button class="submit" id="total-amount-button">Set Budget</button>
+          </div>
+
+          <!-- Expenditure -->
+          <div class="user-amount-container">
+            <h3>Expenses</h3>
+            <p class="hide error" id="product-title-error">
+              Values cannot be empty
+            </p>
+            <input
+              type="text"
+              class="product-title"
+              id="product-title"
+              placeholder="Enter Title of Product"
+            />
+            <input
+              type="number"
+              id="user-amount"
+              placeholder="Enter Cost of Product"
+            />
+            <button class="submit" id="check-amount">Check Amount</button>
+          </div>
+        </div>
+        <!-- Output -->
+        <div class="output-container flex-space">
+          <div>
+            <p>Total Budget</p>
+            <span id="amount">0</span>
+          </div>
+          <div>
+            <p>Expenses</p>
+            <span id="expenditure-value">0</span>
+          </div>
+          <div>
+            <p>Balance</p>
+            <span id="balance-amount">0</span>
+          </div>
+        </div>
+      </div>
+      <!-- List -->
+      <div class="list">
+        <h3>Expense List</h3>
+        <div class="list-container" id="list"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-footer">
+        <div class="brand-logo">
+          <div class="logo"><a href="./index.html">eBUDGET</a></div>
+        </div>
+
+        <div class="support">
+          <h4>Have Any Questions</h4>
+          <div class="btn-holder">
+            <div>
+              <a href="./contact.html" class="cs">Contact Support</a>
+            </div>
+            <div>
+              <a href="#" class="faq">FAQ</a>
+            </div>
+          </div>
+          </div>
+            <div class="socials">
+              <h4>Follow Us</h4>
+              <div>
+                <a href="#" class="fa-brands fa-facebook-f"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-instagram"></a>
+                <a href="#" class="fa-brands fa-linkedin-in"></a>
+              </div>
+          </div>
+        </div>
+
+        <!-- <div class="copyright">
+          <span>Powered By The Pacesetters &copy</span>
+          <span id="copyright">
+            <script>
+              document.getElementById("copyright").appendChild(
+              document.createTextNode(new Date().getFullYear(
+              )))   
+            </script>
+          </span>
+        </div> -->
+
+    </footer>
+    <!-- Script -->
+    <script src="./assets/js/calculator.js"></script>
+  </body>
+</html>
